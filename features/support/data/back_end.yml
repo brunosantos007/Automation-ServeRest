@@ -1,0 +1,38 @@
+# USER ADM
+
+nome_valido: "Batman"
+nome_vazio: ""
+email_valido: "bbb@gmail.com"
+email_vazio: ""
+email_invalido: "bruno@aaaaa"
+email_invalido2: "bruno@gmail.com.br"
+senha_valida: "12345"
+senha_vazia: ""
+senha_invalida: "12"
+
+# USER DEFAULT
+
+nome_default: "Teste"
+email_default: "patrib@gmail.com"
+senha_default: "12345"
+
+# NEW USER
+
+new_nome: "Scroll"
+new_nome_empty: ""
+new_email: "patriaaebe@gmail.com"
+new_email_empty: ""
+new_senha: "12345"
+new_senha_empty: ""
+
+# PRODUTO
+
+nome_produto: "apex legends"
+invalid_product: "zzz"
+nome_product_empty: ""
+quantity_product_empty: ""
+price: "2500"
+price_error: ""
+description: "O campeão de vendas da logitech chegou à sua nova geração! Garanta o melhor desempenho e pare de sofrer com as famosas travadas que tanto atrapalham seu dia a dia."
+description_empty: ""
+quantity: "2"

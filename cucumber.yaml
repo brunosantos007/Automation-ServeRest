@@ -1,0 +1,24 @@
+default: --format pretty -p prd -p chrome -p html --publish-quiet
+default_hml: -p hml -p chrome
+
+# Reporters 
+
+html: --format html --out=reports/report.html
+remote: BROWSER=remote
+
+backend: -t @backend
+frontend: -t @frontend
+e2e: -t @e2e
+
+# ENVIRONMENT 
+
+hml: ENVIRONMENT="hml"
+prd: ENVIRONMENT="prd"
+
+# BROWSERS 
+
+chrome: BROWSER="chrome"
+
+# Visual mode
+
+headless: HEADLESS="true"
