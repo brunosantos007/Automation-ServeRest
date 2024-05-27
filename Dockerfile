@@ -1,4 +1,4 @@
-FROM ruby:2.3
+FROM ruby:2.7
 
 # MAINTAINER Felipe Rodrigues <felipe_rodriguesx@hotmail.com>
 
@@ -7,8 +7,9 @@ WORKDIR ${app_path}
 
 COPY Gemfile* ${app_path}
 
-RUN bundle install
+RUN gem install bundler -v 2.3.26
 
+RUN bundle install
 
 COPY . ${app_path}
 
