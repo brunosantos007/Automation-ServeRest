@@ -1,4 +1,4 @@
-FROM ruby:3.0.0
+FROM ruby:3.1.2
 
 # MAINTAINER Felipe Rodrigues <felipe_rodriguesx@hotmail.com>
 
