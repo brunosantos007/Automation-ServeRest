@@ -7,7 +7,7 @@ WORKDIR ${app_path}
 
 COPY Gemfile* ${app_path}
 
-RUN gem install bundler -v 2.3.26
+RUN gem install bundler -v 2.4.19
 
 RUN bundle install
 
