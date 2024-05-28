@@ -8,7 +8,7 @@ WORKDIR ${app_path}
 
 COPY Gemfile* ${app_path}
 
-RUN chmod 644 Gemfile.lock
+RUN chmod 666 ${app_path}/Gemfile.lock
 
 RUN gem install bundler -v 2.4.19
 
