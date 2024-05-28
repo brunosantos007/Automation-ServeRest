@@ -102,9 +102,11 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  base64
   capybara
   cucumber
   httparty
+  multi_xml
   pry
   rspec
   selenium-webdriver
