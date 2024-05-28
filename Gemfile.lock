@@ -103,13 +103,13 @@ PLATFORMS
 
 DEPENDENCIES
   base64
-  capybara
+  capybara (= 3.40.0)
   cucumber
   httparty
-  multi_xml
+  multi_xml (= 0.7.1)
   pry
   rspec
-  selenium-webdriver
+  selenium-webdriver (= 4.21.1)
   site_prism
 
 BUNDLED WITH
