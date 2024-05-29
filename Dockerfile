@@ -11,6 +11,8 @@ RUN gem install bundler -v 2.4.19
 
 RUN bundle install
 
+RUN gem update --system
+
 COPY . ${app_path}
 
 ENTRYPOINT ["bundle", "exec", "cucumber -p ${BROWSER} -p ${TAG}  --format json -o /opt/jenkins/cucumber.json"]
