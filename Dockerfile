@@ -9,15 +9,15 @@ WORKDIR ${app_path}
 
 COPY Gemfile* ${app_path}
 
+RUN chown -R appuser:appuser ${app_path} && \
+chmod +w ${app_path}/Gemfile.lock
+
+USER appuser
+
 RUN gem install bundler -v 2.4.19
 
 RUN bundle install
 
 COPY . ${app_path}
-
-RUN chown -R appuser:appuser ${app_path} && \
-chmod +w ${app_path}/Gemfile.lock
-
-USER appuser
 
 ENTRYPOINT ["bundle", "exec", "cucumber -p ${BROWSER} -p ${TAG}  --format json -o /opt/jenkins/cucumber.json"]
