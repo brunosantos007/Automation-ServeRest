@@ -5,6 +5,8 @@ MAINTAINER Bruno Santos <brunogsantoss@outlook.com>
 ENV app_path /opt/jenkins/
 WORKDIR ${app_path}
 
+COPY Gemfile* ${app_path}
+
 COPY Gemfile.lock* ${app_path}
 
 RUN gem install bundler -v 2.4.19
