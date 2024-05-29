@@ -9,15 +9,13 @@ WORKDIR ${app_path}
 
 COPY Gemfile* ${app_path}
 
-RUN chmod 666 ${app_path}/Gemfile.lock
-
 RUN gem install bundler -v 2.4.19
 
 RUN bundle install
 
 COPY . ${app_path}
 
-RUN chown -R appuser:appuser /home/appuser/ && \
+RUN chown -R appuser:appuser ${app_path} && \
 chmod +w ${app_path}/Gemfile.lock
 
 USER appuser
