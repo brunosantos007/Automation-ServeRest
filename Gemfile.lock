@@ -99,6 +99,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw-ucrt
 
 DEPENDENCIES
